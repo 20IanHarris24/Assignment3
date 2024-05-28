@@ -12,8 +12,8 @@ internal class Program
         person2.GetFName();
         person2.GetAge();
         Console.ForegroundColor = ConsoleColor.Blue;
-        Console.WriteLine($"\n\t First Name: {person.GetFName()} weight: {person.GetWeight()}KGs\n");
-        Console.WriteLine($"\n\t First Name: {person2.GetFName()} age: {person2.GetAge()}years\n");
+        Console.WriteLine($"\n\t First Name: {person.GetFName()} weight: {person.GetWeight()}KGs");
+        Console.WriteLine($"\n\t First Name: {person2.GetFName()} age: {person2.GetAge()}years");
 
 
 
@@ -22,7 +22,7 @@ internal class Program
         person.SetWeight(89.5);
         person2.SetAge(32);
         Console.ForegroundColor = ConsoleColor.DarkRed;
-        Console.WriteLine($"\n\t First Name: {person.GetFName()} updated weight: {person.GetWeight()}KGs\n");
-        Console.WriteLine($"\n\t First Name: {person2.GetFName()} updated age: {person2.GetAge()}years\n");
+        Console.WriteLine($"\n\t First Name: {person.GetFName()} updated weight: {person.GetWeight()}KGs");
+        Console.WriteLine($"\n\t First Name: {person2.GetFName()} updated age: {person2.GetAge()}years");
     }
 }
