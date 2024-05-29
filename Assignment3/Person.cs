@@ -24,59 +24,86 @@ namespace Assignment3
             _weight = weight;
         }
 
-        public int GetAge() 
-        {
-            return _age;
+        public int Age {    //Property 
+            get { return _age; }
+
+            set
+            {
+                if (value < 1)
+                    {
+                    throw new ArgumentException($"The Age value entered: {value}, must be greater than 0 (zero)");
+                    }
+                
+                   else {
+                        
+                        //PersonHandler.SetAge(Person., value);
+                        _age = value;                      
+                     }
+                               
+            }
+
         }
 
-        public void SetAge(int age)
-        {
-           _age = age; 
+       
+        public string FName {
+            get { return _fName; }
+
+            set 
+            { 
+                if (value.Length < 3 || value.Length > 10)
+                    {
+                    throw new ArgumentException($"The first name entered contained: {value.Length} characters. The first name should contain between 2 and 10 characters");
+                    }
+
+                    else {
+
+                        _fName = value;
+                    }
+             }
         }
 
+       
 
-        public string GetFName()
-        {
-            return _fName;
+        public string LName{
+            get { return _lName; }
+
+            set 
+            {
+                if (value.Length < 3 || value.Length > 15)
+                {
+                    throw new ArgumentException($"The last name entered contained: {value.Length} characters. The last name should contain between 3 and 15 characters");
+                }
+
+                else {
+
+                    _lName = value;
+                }
+            }
+                
+                    
+                
+                
+            
+            
+        }
+         
+            
+
+        
+        public double Height{
+            get { return _height; }
+            set { _height = value; }
+
+            }
+        
+
+        public double Weight{
+            get { return _weight; }
+            set { _weight = value; }    
+           
         }
 
-        public void SetFName(string fName)
-        {
-            _fName = fName;
-        }
-
-        public string GetLName()
-        {
-            return _lName;
-        }
-
-        public void SetLName(string lName)
-        {
-            _lName = lName;
-        }
-
-        public double GetHeight()
-        {
-            return _height;
-        }
-
-        public void SetHeight(double height)
-        {
-            _height = height;
-        }
-
-        public double GetWeight()
-        {
-            return _weight;
-        }
-
-        public void SetWeight(double weight)
-        {
-            _weight = weight;
-        }
-
-
-
+       
 
     }
     
