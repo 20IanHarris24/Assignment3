@@ -8,32 +8,44 @@ namespace Assignment3
 {
     internal class PersonHandler
     {
+
+
+        public Person CreatePerson(int age, string f_name, string l_name, double height, double weight)
+        { 
+ 
+            Person personCreated = new Person(age, f_name, l_name, height, weight);
+            return personCreated;
+        
+        }
+        
+
+
         public void SetAge(Person pers, int age)
         {
             pers.Age = age;
         }
 
-        /*public int GetAge(Person pers)
+        public int GetAge(Person pers)
         {
             return pers.Age;
         }
 
-        public void SetFName(Person pers, string fname)
+        public void Setf_name(Person pers, string f_name)
         {
-            pers.FName = fname;
+            pers.FName = f_name;
         }
 
-        public string GetFName(Person pers)
+        public string Getf_name(Person pers)
         {
             return pers.FName;
         }
 
-        public void SetLName(Person pers, string lname)
+        public void Setl_name(Person pers, string l_name)
         {
-            pers.LName = lname;
+            pers.LName = l_name;
         }
 
-        public string GetLName(Person pers)
+        public string Getl_name(Person pers)
         {
             return pers.LName;
         }
@@ -58,11 +70,6 @@ namespace Assignment3
             return pers.Weight;
         }
 
-        public CreatePerson(int age, string fname, string lname, double height, double weight)
-        { 
-                PersonHandler person = new Person(age, fname, lname, height, weight);  
-        
-        }
 
 
         public void GetPerson()
@@ -73,40 +80,31 @@ namespace Assignment3
 
 
 
-        public Person DeletePerson(int personId)
+        public void DeletePerson(int personId)
         {
             //do something..
         }
 
 
-        public static void PersonClapping(string fname)
+        public void PersonClapping(string f_name)
         {
-
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine($"\n\t {fname} is clapping their hands");
-
-                
+            Console.WriteLine($"\n\t {f_name} is clapping");
         }
 
 
-        public static void PersonDancing(string fname)
+        public void PersonDancing(string f_name)
         {
-
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"\n\t {fname} is dancing their arses off");
-
-
+            Console.WriteLine($"\n\t {f_name} has moves like Jagger");
         }
 
 
-        public static void PersonSinging(string fname)
+        public void PersonSinging(string f_name)
         {
-
             Console.ForegroundColor = ConsoleColor.Gray;
-            Console.WriteLine($"\n\t {fname} is singing from the roof tops");
-
-
-        }*/
+            Console.WriteLine($"\n\t {f_name} is singing from the roof tops");
+        }
 
 
 

@@ -8,23 +8,23 @@ namespace Assignment3
 {
     internal class Person
     {
+        //Field
         private int _age;
         private string _fName;
         private string _lName;
         private double _height;
         private double _weight;
 
-
-        public Person(string firstName, string lastName, int age, double height, double weight) ///Instance Constructor
+        public Person(int age, string fName, string lName, double height, double weight)
         {
-            _fName = firstName;
-            _lName = lastName;
             _age = age;
+            _fName = fName;
+            _lName = lName;
             _height = height;
             _weight = weight;
         }
 
-        public int Age {    //Property 
+        public int Age {    //Property with input validation
             get { return _age; }
 
             set
@@ -35,8 +35,7 @@ namespace Assignment3
                     }
                 
                    else {
-                        
-                        //PersonHandler.SetAge(Person., value);
+
                         _age = value;                      
                      }
                                
@@ -45,7 +44,7 @@ namespace Assignment3
         }
 
        
-        public string FName {
+        public string FName {    //Property with input validation
             get { return _fName; }
 
             set 
@@ -64,7 +63,7 @@ namespace Assignment3
 
        
 
-        public string LName{
+        public string LName{     //Property with input validation
             get { return _lName; }
 
             set 
@@ -79,39 +78,33 @@ namespace Assignment3
                     _lName = value;
                 }
             }
-                
-                    
-                
-                
-            
-            
-        }
+          }
          
             
 
         
-        public double Height{
-            get { return _height; }
-            set { _height = value; }
+            public double Height{
+                get { return _height; }
+                set { _height = value; }
 
-            }
+                }
         
 
-        public double Weight{
-            get { return _weight; }
-            set { _weight = value; }    
+            public double Weight{
+                get { return _weight; }
+                set { _weight = value; }    
            
-        }
+            }
 
        
 
     }
-    
-
-
-
-
 
 
    
+
+
+
+
+
 }
