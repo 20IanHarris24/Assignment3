@@ -19,7 +19,6 @@ namespace Assignment3
         }
         
 
-
         public void SetAge(Person pers, int age)
         {
             pers.Age = age;
@@ -79,12 +78,10 @@ namespace Assignment3
         }
 
 
-
-        public void DeletePerson(int personId)
+        public void DeletePerson()
         {
             //do something..
         }
-
 
         public void PersonClapping(string f_name)
         {
@@ -92,20 +89,16 @@ namespace Assignment3
             Console.WriteLine($"\n\t {f_name} is clapping");
         }
 
-
         public void PersonDancing(string f_name)
         {
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"\n\t {f_name} has moves like Jagger");
         }
-
-
         public void PersonSinging(string f_name)
         {
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.WriteLine($"\n\t {f_name} is singing from the roof tops");
         }
-
 
 
     }

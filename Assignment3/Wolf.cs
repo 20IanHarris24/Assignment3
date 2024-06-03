@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment3
 {
-    internal class Wolf : Animal
+    internal class Wolf : Animal, IPerson
     {
         public int LargeTeeth {  get; set; }
             
@@ -17,6 +17,12 @@ namespace Assignment3
         }
 
 
-
+        public virtual void Talk()
+        {
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("\n\tPeter Piper picked a peck of Pickled Peppars");
+        }
     }
+
+  
 }

@@ -122,23 +122,19 @@ internal class Program
         //Q.13 If it's only the birds that should access to the new attribute then I would update the Bird class.
         //Q.14 If all animals should access to the new attribute then I would update the Animal class.
 
-        IPerson horse = new Horse(); 
-        Pelican pelican = new Pelican();
-        Worm worm = new Worm();
-        Wolfman wolfman = new Wolfman();  //  ToDo ?? not following the IPerson thing
 
-        worm.BilaterallySymmetrical = true;
-        horse.SleepStandingUp = true;
-        pelican.EatFish = 100;
+          IPerson wolfman = new Wolfman();
+          IPerson wolf = new Wolf();
 
-        worm.DoSound();
-        horse.DoSound();
-        pelican.DoSound();
-        wolfman.;
+            wolfman.Talk();
+            wolf.Talk();
+
+        
+        
 
         Console.ResetColor();
 
-        Console.WriteLine(horse.ToString());
+       
 
 
 

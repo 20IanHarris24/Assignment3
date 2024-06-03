@@ -8,7 +8,7 @@ namespace Assignment3
 {
     internal interface IPerson
     {
-       void Talk();
-       
+
+        public abstract void Talk();
     }
 }

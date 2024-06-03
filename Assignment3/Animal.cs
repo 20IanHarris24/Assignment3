@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Assignment3
 {
-    abstract class Animal
+
+   
+    abstract class Animal 
     {
 
 
@@ -19,6 +21,7 @@ namespace Assignment3
                        
         }
 
+         
 
         public string? AnimalName { get; set; }
         public int AnimalAge { get; set; }
@@ -26,6 +29,10 @@ namespace Assignment3
 
         public abstract void DoSound();
 
+         
+
+        
+              
     }
 }
 
