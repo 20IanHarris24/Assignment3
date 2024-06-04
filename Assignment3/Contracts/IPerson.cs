@@ -4,11 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assignment3
+namespace Assignment3.Contracts
 {
     internal interface IPerson
     {
 
-        public abstract void Talk();
+        public virtual void Talk() 
+        
+        {
+        
+        }
+        
     }
 }

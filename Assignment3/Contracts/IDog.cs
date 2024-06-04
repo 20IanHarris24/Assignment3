@@ -4,12 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assignment3
+namespace Assignment3.Contracts
 {
-    
-
-    internal class Swan : Bird
+    internal interface IDog
     {
-        public bool UglyDuckling { get; set; }
+
+        public abstract string SleepingOnTheSofa();
+        
+
+
+
     }
+
 }

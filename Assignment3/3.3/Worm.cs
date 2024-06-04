@@ -15,9 +15,15 @@ namespace Assignment3
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("The worm says: Shuffle Shuffly Shuffle shuffle");
+            Console.ResetColor();
         }
 
-
+        public override string Stats()
+        {
+            //BilaterallySymmetrical = true;
+            string Worm = "It is "+ BilaterallySymmetrical +" that worms can be defined as BilaterallySymmetrical";
+            return Worm;
+        }
 
 
     }

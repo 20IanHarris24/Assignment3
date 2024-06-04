@@ -1,6 +1,7 @@
 ﻿using Assignment3;
 using System;
 using System.Data.Common;
+using Assignment3.Contracts;
 
 internal class Program
 {
@@ -123,20 +124,99 @@ internal class Program
         //Q.14 If all animals should access to the new attribute then I would update the Animal class.
 
 
-          IPerson wolfman = new Wolfman();
-          IPerson wolf = new Wolf();
+        /*IPerson wolfman = new Wolfman();
+        wolfman.Talk();*/
 
-            wolfman.Talk();
-            wolf.Talk();
 
+        //Assignment 3 Section 3.4 More POLYMORPHISM
+
+        Horse horse = new Horse(); 
+        horse.AnimalName = "Arabian Horse";
+        horse.AnimalWeight = 420.8;
+        horse.AnimalAge = 5;
+        horse.SleepStandingUp = true;
         
         
+        Dog dog = new Dog();
+        dog.AnimalName = "King Charles Spaniel Dog";
+        dog.AnimalWeight = 12.6;
+        dog.AnimalAge = 6;
+        dog.GoodHearing = true;
+        
 
-        Console.ResetColor();
 
-       
+        Wolf wolf = new Wolf();
+        wolf.AnimalName = "Yosemite Wolf";
+        wolf.AnimalWeight = 38.9;
+        wolf.AnimalAge = 12;
+        wolf.LargeTeeth = 42;
+        
+
+        Hedgehog hedgehog = new Hedgehog();
+        hedgehog.AnimalName = "Garden HedgeHog";
+        hedgehog.AnimalWeight = 2.8;
+        hedgehog.AnimalAge = 7;
+        hedgehog.NrOfSpines = 6500;
+
+        Wolfman wolfman = new Wolfman();
+        wolfman.AnimalName = "Teen Wolf";
+        wolfman.AnimalWeight = 85.4;
+        wolfman.AnimalAge = 18;
+        wolfman.LargeTeeth = 38;
 
 
+        List<Animal> Animals = new List<Animal>();
+        
+        Animals.Add(horse);
+        Animals.Add(dog);
+        Animals.Add(wolf);
+        Animals.Add(hedgehog);
+        Animals.Add(wolfman);
+
+
+
+
+        foreach (var creature in Animals)
+        {
+
+            if (creature is IPerson)
+            {
+                var person = (IPerson)creature;
+                Console.WriteLine(creature.AnimalName);
+                person.Talk();
+                Console.WriteLine(creature.Stats());
+
+            } else if (creature is IDog)
+                               
+                {
+                var dogXtra = (IDog)creature;
+                Console.WriteLine(creature.AnimalName);
+                creature.DoSound();
+                Console.WriteLine(creature.Stats());
+                Console.WriteLine(dogXtra.SleepingOnTheSofa());
+                Console.WriteLine("\n");
+                }
+                    else
+
+                    {
+                    Console.WriteLine(creature.AnimalName);
+                    creature.DoSound();
+                    Console.WriteLine(creature.Stats());
+                    Console.WriteLine("\n");
+
+                    }
+        }
+
+        //List<Dogs> Dogs = new List<Dogs>();
+
+        //Dogs.Add(horse); //Error
+        //
+        //The list created expects objects of type Dog with properties to match.
+        //Although both objects inherit properties from teh Animal class, the properties that differentiate a Horse from a dog mean that
+        //Instansiating an object of type horse and trying to add it to the list will not work.   
+
+
+        //Animals.SleepingOnTheSofa(); //Cannot be accessed as the definition doesn't exist in the base definition to allow it to be inherited.
 
 
         Console.ResetColor();

@@ -15,8 +15,16 @@ namespace Assignment3
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("The hedgehog says: Sniffle Sniffly Sniffle Sniffle");
+            Console.ResetColor();
         }
 
+        public override string Stats()
+        {
+            //NrOfSpines = 6500;
+            string Hedgehog = "Typically hedgehogs have about "+ NrOfSpines +" on their body";
+
+            return Hedgehog;
+        }
 
 
     }

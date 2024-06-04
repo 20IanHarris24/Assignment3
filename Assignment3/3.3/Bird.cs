@@ -14,8 +14,16 @@ namespace Assignment3
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("The bird says: Chirp Chirpy Chirp Chirp");
+            Console.ResetColor();
         }
 
+        public override string Stats()
+        {
+            //WingSpan = 65;
+            string Bird = "Bird wingspan " + WingSpan + "cms";
+
+            return Bird;
+        }
 
     }
 }

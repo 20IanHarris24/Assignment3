@@ -14,9 +14,16 @@ namespace Assignment3
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("The horse says: Neee Neeely Neee Neee");
+            Console.ResetColor();
         }
 
+        public override string Stats()
+        {
+            //SleepStandingUp = true;
+            string Horse = "It is "+ SleepStandingUp + " that horses sleep standing up";
+            return Horse;
 
+        }
 
     }
 }
