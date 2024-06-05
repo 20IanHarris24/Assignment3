@@ -118,18 +118,20 @@ internal class Program
          */
 
 
-        //Assignment 3 Section 3.3 INHERITANCE
+        /* Assignment 3 Section 3.3 INHERITANCE
 
-        //Q.13 If it's only the birds that should access to the new attribute then I would update the Bird class.
-        //Q.14 If all animals should access to the new attribute then I would update the Animal class.
+        Q.13 If it's only the birds that should access to the new attribute then I would update the Bird class.
+        Q.14 If all animals should access to the new attribute then I would update the Animal class.*/
 
 
-        /*IPerson wolfman = new Wolfman();
+       /*
+        IPerson wolfman = new Wolfman();
         wolfman.Talk();*/
 
 
         //Assignment 3 Section 3.4 More POLYMORPHISM
 
+        /*
         Horse horse = new Horse(); 
         horse.AnimalName = "Arabian Horse";
         horse.AnimalWeight = 420.8;
@@ -186,7 +188,7 @@ internal class Program
                 person.Talk();
                 Console.WriteLine(creature.Stats());
 
-            } else if (creature is IDog)
+            } else if (creature is IDog)    
                                
                 {
                 var dogXtra = (IDog)creature;
@@ -207,16 +209,21 @@ internal class Program
                     }
         }
 
-        //List<Dogs> Dogs = new List<Dogs>();
+        List<Dogs> Dogs = new List<Dogs>();
+        Dogs.Add(horse); //Error
+        */
+        /*
+        The list created expects objects of type Dog with properties to match.
+        Although both objects inherit properties from teh Animal class, the properties that differentiate a Horse from a dog mean that
+        Instansiating an object of type horse and trying to add it to the list will not work.*/   
 
-        //Dogs.Add(horse); //Error
-        //
-        //The list created expects objects of type Dog with properties to match.
-        //Although both objects inherit properties from teh Animal class, the properties that differentiate a Horse from a dog mean that
-        //Instansiating an object of type horse and trying to add it to the list will not work.   
 
-
-        //Animals.SleepingOnTheSofa(); //Cannot be accessed as the definition doesn't exist in the base definition to allow it to be inherited.
+        Animals.SleepingOnTheSofa(); //Cannot be accessed as the definition doesn't exist in the base definition to allow it to be inherited.
+        
+        /*
+        To access the SleepingOnTheSofa method in the foreach Animal loop use the Interface type and create an IDog interface
+        implement it in the Dog Class then write the method code.
+        Using Polymorphism mechanism and casting the creature object to IDog I'm then able to access method in the foreach loop.*/
 
 
         Console.ResetColor();
