@@ -12,10 +12,8 @@ namespace Assignment3
 
         public Person CreatePerson(int age, string f_name, string l_name, double height, double weight)
         { 
- 
             Person personCreated = new Person(age, f_name, l_name, height, weight);
             return personCreated;
-        
         }
         
 

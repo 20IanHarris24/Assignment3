@@ -19,7 +19,6 @@ namespace Assignment3
         {
             //EatShrimps = 60;
             string Flamingo = "Flamingoes eat about " + EatShrimps + "g of shrimp daily";
-
             return Flamingo;
         }
     }

@@ -21,9 +21,7 @@ namespace Assignment3
                 
         public override string Stats()
         {
-            //LargeTeeth = 42;
             string Wolf = "A wolf has " + LargeTeeth + " large teeth";
-
             return Wolf;
         }
     }

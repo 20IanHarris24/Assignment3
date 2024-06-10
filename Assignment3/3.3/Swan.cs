@@ -15,9 +15,7 @@ namespace Assignment3
 
         public override string Stats()
         {
-            //UglyDuckling = true;
             string Swan = "It's "+ UglyDuckling +" that what was thought to be an ugly duckling was in fact a swan!";
-
             return Swan;
         }
 

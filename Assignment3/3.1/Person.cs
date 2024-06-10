@@ -24,46 +24,46 @@ namespace Assignment3
             _weight = weight;
         }
 
-        public int Age {    //Property with input validation
+        public int Age //Property with input validation
+        {    
             get { return _age; }
 
             set
             {
                 if (value < 1)
-                    {
+                {
                     throw new ArgumentException($"The Age value entered: {value}, must be greater than 0 (zero)");
-                    }
-                
-                   else {
-
+                }
+                        else 
+                        {
                         _age = value;                      
-                     }
-                               
+                        }
             }
 
         }
 
        
-        public string FName {    //Property with input validation
+        public string FName //Property with input validation
+        {    
             get { return _fName; }
 
             set 
             { 
                 if (value.Length < 3 || value.Length > 10)
-                    {
+                {
                     throw new ArgumentException($"The first name entered contained: {value.Length} characters. The first name should contain between 2 and 10 characters");
-                    }
-
-                    else {
-
+                }
+                        else 
+                        {
                         _fName = value;
-                    }
-             }
+                        }
+            }
         }
 
        
 
-        public string LName{     //Property with input validation
+        public string LName //Property with input validation
+        {     
             get { return _lName; }
 
             set 
@@ -72,28 +72,27 @@ namespace Assignment3
                 {
                     throw new ArgumentException($"The last name entered contained: {value.Length} characters. The last name should contain between 3 and 15 characters");
                 }
-
-                else {
-
-                    _lName = value;
-                }
+                        else 
+                        {
+                        _lName = value;
+                        }
             }
           }
          
             
 
         
-            public double Height{
+            public double Height
+            {
                 get { return _height; }
                 set { _height = value; }
-
-                }
+            }
         
 
-            public double Weight{
+            public double Weight
+            {
                 get { return _weight; }
                 set { _weight = value; }    
-           
             }
 
 

@@ -188,25 +188,26 @@ internal class Program
                 person.Talk();
                 Console.WriteLine(creature.Stats());
 
-            } else if (creature is IDog)    
+            } 
+                else if (creature is IDog)    
                                
-                {
-                var dogXtra = (IDog)creature;
-                Console.WriteLine(creature.AnimalName);
-                creature.DoSound();
-                Console.WriteLine(creature.Stats());
-                Console.WriteLine(dogXtra.SleepingOnTheSofa());
-                Console.WriteLine("\n");
-                }
-                    else
+                     {
+                        var dogXtra = (IDog)creature;
+                        Console.WriteLine(creature.AnimalName);
+                        creature.DoSound();
+                        Console.WriteLine(creature.Stats());
+                        Console.WriteLine(dogXtra.SleepingOnTheSofa());
+                        Console.WriteLine("\n");
+                      }
+                        else
 
-                    {
-                    Console.WriteLine(creature.AnimalName);
-                    creature.DoSound();
-                    Console.WriteLine(creature.Stats());
-                    Console.WriteLine("\n");
+                            {
+                              Console.WriteLine(creature.AnimalName);
+                              creature.DoSound();
+                              Console.WriteLine(creature.Stats());
+                              Console.WriteLine("\n");
 
-                    }
+                            }
         }
 
         List<Dogs> Dogs = new List<Dogs>();

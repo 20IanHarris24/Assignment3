@@ -15,9 +15,8 @@ namespace Assignment3
 
         public override string Stats()
         {
-            //EatFish = 1.8;
+            
             string Pelican = "A pelican can eat about " + EatFish + " large teeth";
-
             return Pelican;
         }
 

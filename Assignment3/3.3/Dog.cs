@@ -11,7 +11,6 @@ namespace Assignment3
     {
         public bool GoodHearing { get; set; }
 
-
         public override void DoSound()
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;

@@ -21,8 +21,6 @@ namespace Assignment3
                        
         }
 
-         
-
         public string? AnimalName { get; set; }
         public int AnimalAge { get; set; }
         public double AnimalWeight { get; set; }

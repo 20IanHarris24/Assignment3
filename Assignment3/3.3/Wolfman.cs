@@ -19,10 +19,8 @@ namespace Assignment3
 
         public override string Stats()
         {
-            
             string Wolfman = "Likes to be out during a full moon";
             return Wolfman;
-
         }
 
     }
