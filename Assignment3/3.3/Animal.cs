@@ -18,7 +18,7 @@ namespace Assignment3
 
         public Animal()
         {
-                       
+
         }
 
         public string? AnimalName { get; set; }

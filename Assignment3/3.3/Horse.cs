@@ -10,6 +10,7 @@ namespace Assignment3
     {
         public bool SleepStandingUp { get; set; }
 
+        
         public override void DoSound() 
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
@@ -20,8 +21,8 @@ namespace Assignment3
         public override string Stats()
         {
             //SleepStandingUp = true;
-            string Horse = "It is "+ SleepStandingUp + " that horses sleep standing up";
-            return Horse;
+            string horseStats = "Horse name is : " + AnimalName + ".\nHorse weighs " + AnimalWeight + " kgs and is " + AnimalAge +" years old.\nIt is "+ SleepStandingUp + " that horses sleep standing up";
+            return horseStats;
 
         }
 

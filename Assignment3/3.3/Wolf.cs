@@ -21,8 +21,8 @@ namespace Assignment3
                 
         public override string Stats()
         {
-            string Wolf = "A wolf has " + LargeTeeth + " large teeth";
-            return Wolf;
+            string wolfStats = "Wolf name is : " + AnimalName + ".\nWolf weighs " + AnimalWeight + " kgs and is " + AnimalAge + " years old.\nA wolf has " + LargeTeeth + " large teeth";
+            return wolfStats;
         }
     }
 

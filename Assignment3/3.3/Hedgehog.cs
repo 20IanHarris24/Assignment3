@@ -20,10 +20,9 @@ namespace Assignment3
 
         public override string Stats()
         {
-            //NrOfSpines = 6500;
-            string Hedgehog = "Typically hedgehogs have about "+ NrOfSpines +" on their body";
-
-            return Hedgehog;
+            NrOfSpines = 6500;
+            string hedgehogStats = "Hedgehog name is : " + AnimalName + ".\nHedgehog weighs " + AnimalWeight + " kgs and is " + AnimalAge + " years old.\nTypically hedgehogs have about " + NrOfSpines + " on their body";
+            return hedgehogStats;
         }
 
 

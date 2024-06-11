@@ -17,9 +17,9 @@ namespace Assignment3
 
         public override string Stats()
         {
-            //EatShrimps = 60;
-            string Flamingo = "Flamingoes eat about " + EatShrimps + "g of shrimp daily";
-            return Flamingo;
+            EatShrimps = 60;
+            string flamingoStats = "Flamingo name is : " + AnimalName + ".\nFlamingo weighs " + AnimalWeight + " kgs and is " + AnimalAge + " years old.\nFlamingoes eat about " + EatShrimps + "g of shrimp daily";
+            return flamingoStats;
         }
     }
 }

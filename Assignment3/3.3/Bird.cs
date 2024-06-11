@@ -19,9 +19,9 @@ namespace Assignment3
 
         public override string Stats()
         {
-            string Bird = "Bird wingspan " + WingSpan + "cms";
-            //Bird = base.Stats();
-            return Bird;
+            
+            string birdStats = "Bird name is : " + AnimalName + ".\nBird weighs " + AnimalWeight + " kgs and is " + AnimalAge + " years old.\nBird wingspan " + WingSpan + "cms";
+            return birdStats;
         }
 
     }

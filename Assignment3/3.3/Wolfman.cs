@@ -19,8 +19,8 @@ namespace Assignment3
 
         public override string Stats()
         {
-            string Wolfman = "Likes to be out during a full moon";
-            return Wolfman;
+            string wolfmanStats = "Wolfman name is : " + AnimalName + ".\nWolfman weighs " + AnimalWeight + " kgs and is " + AnimalAge + " years old.\nA Wolfman likes to be out during a full moon";
+            return wolfmanStats;
         }
 
     }

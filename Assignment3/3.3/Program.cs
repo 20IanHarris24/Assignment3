@@ -120,7 +120,7 @@ internal class Program
 
         /* Assignment 3 Section 3.3 INHERITANCE
 
-        Q.13 If it's only the birds that should access to the new attribute then I would update the Bird class.
+        Q.13 If it's only the birds that should have access to the new attribute then I would update the Bird class.
         Q.14 If all animals should access to the new attribute then I would update the Animal class.*/
 
 
@@ -129,22 +129,23 @@ internal class Program
         wolfman.Talk();*/
 
 
-        //Assignment 3 Section 3.4 More POLYMORPHISM
+       //Assignment 3 Section 3.4 More POLYMORPHISM
 
-        /*
-        Horse horse = new Horse(); 
+
+
+        Horse horse = new Horse();
         horse.AnimalName = "Arabian Horse";
         horse.AnimalWeight = 420.8;
         horse.AnimalAge = 5;
         horse.SleepStandingUp = true;
-        
-        
+
+
         Dog dog = new Dog();
         dog.AnimalName = "King Charles Spaniel Dog";
         dog.AnimalWeight = 12.6;
         dog.AnimalAge = 6;
         dog.GoodHearing = true;
-        
+
 
 
         Wolf wolf = new Wolf();
@@ -152,7 +153,7 @@ internal class Program
         wolf.AnimalWeight = 38.9;
         wolf.AnimalAge = 12;
         wolf.LargeTeeth = 42;
-        
+
 
         Hedgehog hedgehog = new Hedgehog();
         hedgehog.AnimalName = "Garden HedgeHog";
@@ -168,7 +169,7 @@ internal class Program
 
 
         List<Animal> Animals = new List<Animal>();
-        
+
         Animals.Add(horse);
         Animals.Add(dog);
         Animals.Add(wolf);
@@ -184,42 +185,41 @@ internal class Program
             if (creature is IPerson)
             {
                 var person = (IPerson)creature;
-                Console.WriteLine(creature.AnimalName);
-                person.Talk();
                 Console.WriteLine(creature.Stats());
+                person.Talk();
+                
 
-            } 
-                else if (creature is IDog)    
-                               
-                     {
-                        var dogXtra = (IDog)creature;
-                        Console.WriteLine(creature.AnimalName);
-                        creature.DoSound();
-                        Console.WriteLine(creature.Stats());
-                        Console.WriteLine(dogXtra.SleepingOnTheSofa());
-                        Console.WriteLine("\n");
-                      }
-                        else
+            }
+            else if (creature is IDog)
 
-                            {
-                              Console.WriteLine(creature.AnimalName);
-                              creature.DoSound();
-                              Console.WriteLine(creature.Stats());
-                              Console.WriteLine("\n");
+            {
+                var dogXtra = (IDog)creature;
+                Console.WriteLine(creature.Stats());
+                Console.WriteLine(dogXtra.SleepingOnTheSofa());
+                creature.DoSound();
+                Console.WriteLine("\n");
+            }
+            else
 
-                            }
+            { 
+                
+                Console.WriteLine(creature.Stats());
+                creature.DoSound();
+                Console.WriteLine("\n");
+
+            }
         }
 
-        List<Dogs> Dogs = new List<Dogs>();
-        Dogs.Add(horse); //Error
-        */
+       /* List<Dogs> Dogs = new List<Dogs>();
+        Dogs.Add(horse); //Error*/
+
         /*
         The list created expects objects of type Dog with properties to match.
         Although both objects inherit properties from teh Animal class, the properties that differentiate a Horse from a dog mean that
-        Instansiating an object of type horse and trying to add it to the list will not work.*/   
+        Instansiating an object of type horse and trying to add it to the list will not work.*/
 
 
-        Animals.SleepingOnTheSofa(); //Cannot be accessed as the definition doesn't exist in the base definition to allow it to be inherited.
+        //Animals.SleepingOnTheSofa(); //Cannot be accessed as the method would need to exist in the base class definition.
         
         /*
         To access the SleepingOnTheSofa method in the foreach Animal loop use the Interface type and create an IDog interface

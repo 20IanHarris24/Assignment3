@@ -15,9 +15,8 @@ namespace Assignment3
 
         public override string Stats()
         {
-            
-            string Pelican = "A pelican can eat about " + EatFish + " large teeth";
-            return Pelican;
+            string pelicanStats = "Pelican name is : " + AnimalName + ".\nPelican weighs " + AnimalWeight + " kgs and is " + AnimalAge + " years old.\nA pelican can eat about " + EatFish + " kgs of fish a day";
+            return pelicanStats;
         }
 
 

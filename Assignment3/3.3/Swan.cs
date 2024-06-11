@@ -15,8 +15,8 @@ namespace Assignment3
 
         public override string Stats()
         {
-            string Swan = "It's "+ UglyDuckling +" that what was thought to be an ugly duckling was in fact a swan!";
-            return Swan;
+            string swanStats = "Swan name is : " + AnimalName + ".\nSwan weighs " + AnimalWeight + " kgs and is " + AnimalAge + " years old.\nIt's " + UglyDuckling + " that what was thought to be an ugly duckling was in fact a swan!";
+            return swanStats;
         }
 
     }

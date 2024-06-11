@@ -21,8 +21,8 @@ namespace Assignment3
         public override string Stats()
         {
             //BilaterallySymmetrical = true;
-            string Worm = "It is "+ BilaterallySymmetrical +" that worms can be defined as BilaterallySymmetrical";
-            return Worm;
+            string wormStats = "worm name is : " + AnimalName + ".\nWorm weighs " + AnimalWeight + " kgs and is " + AnimalAge + " years old.\nIt is " + BilaterallySymmetrical + " that worms can be defined as BilaterallySymmetrical";
+            return wormStats;
         }
 
 

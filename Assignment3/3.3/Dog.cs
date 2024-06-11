@@ -21,8 +21,8 @@ namespace Assignment3
         public override string Stats()
         {
             //GoodHearing = true;
-            string Dog = "It is "+ GoodHearing +" that dogs have exceptional hearing";
-            return Dog;
+            string dogStats = "Dog name is : " + AnimalName + ".\nDog weighs " + AnimalWeight + " kgs and is " + AnimalAge + " years old.\nIt is "+ GoodHearing +" that dogs have exceptional hearing";
+            return dogStats;
         }
 
         public string SleepingOnTheSofa()
