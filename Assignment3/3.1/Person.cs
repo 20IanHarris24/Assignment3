@@ -15,15 +15,6 @@ namespace Assignment3
         private double _height;
         private double _weight;
 
-        public Person(int age, string fName, string lName, double height, double weight)
-        {
-            _age = age;
-            _fName = fName;
-            _lName = lName;
-            _height = height;
-            _weight = weight;
-        }
-
         public int Age //Property with input validation
         {    
             get { return _age; }
@@ -78,10 +69,6 @@ namespace Assignment3
                         }
             }
           }
-         
-            
-
-        
             public double Height
             {
                 get { return _height; }
@@ -94,6 +81,15 @@ namespace Assignment3
                 get { return _weight; }
                 set { _weight = value; }    
             }
+        public Person(int age, string fName, string lName, double height, double weight) //Constructor
+        {
+            _age = age;
+            _fName = fName;
+            _lName = lName;
+            _height = height;
+            _weight = weight;
+        }
+
 
 
        

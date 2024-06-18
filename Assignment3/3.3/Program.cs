@@ -17,8 +17,8 @@ internal class Program
 
         /*
         Person person = new Person(); //Create an empty object of the Person class (used a default constructer but now no need as the constructor is defined)
-        Person person1 = new Person(37, "Terry", "Sunport", 1.75, 87.6); //Instansiating the person1 object of the Person class
-        Person person2 = new Person(31, "Lily", "Turnington", 1.70, 77.5);  //Instansiating the person2 object of the Person class
+        Person person1 = new Person(37, "Terry", "Sunport", 1.75, 87.6); //Instantiating the person1 object of the Person class
+        Person person2 = new Person(31, "Lily", "Turnington", 1.70, 77.5);  //Instantiating the person2 object of the Person class
         person1.Age = 40; //update age of person 1
         person2.LName = "Fletcher"; //Update last name of person 2;
         Console.WriteLine($"\t First Name: {person1.FName}, Last Name: {person1.LName}, Age: {person1.Age} years old");
@@ -55,14 +55,14 @@ internal class Program
          
 
 
-        //Using the PersonHandler Class methods to instansiate and perform operations on the Person Object
+        //Using the PersonHandler Class methods to instantiate and perform operations on the Person Object
 
         PersonHandler personHandler = new PersonHandler()!; //Create an object of PersonHandler class
 
 
-         var personCreated1 = personHandler.CreatePerson(31,"Julia", "Turnpike", 178, 80.3); //Instansiate person1 object using PersonHandler class
-         var personCreated2 = personHandler.CreatePerson(40,"Tina", "Johnson", 168, 79.5);   //Instansiate person2 object using PersonHandler class
-         var personCreated3 = personHandler.CreatePerson(31, "Simon", "Smith", 169, 85.2);   //Instansiate person3 object using PersonHandler class
+         var personCreated1 = personHandler.CreatePerson(31,"Julia", "Turnpike", 178, 80.3); //Instantiate person1 object using PersonHandler class
+         var personCreated2 = personHandler.CreatePerson(40,"Tina", "Johnson", 168, 79.5);   //Instantiate person2 object using PersonHandler class
+         var personCreated3 = personHandler.CreatePerson(31, "Simon", "Smith", 169, 85.2);   //Instantiate person3 object using PersonHandler class
 
          Console.ForegroundColor = ConsoleColor.Blue;
          Console.WriteLine($"\n\t Created Person: {personHandler.Getf_name(personCreated1)} {personHandler.Getl_name(personCreated1)}, Age: {personHandler.GetAge(personCreated1)}, Height: {personHandler.GetHeight(personCreated1)} cms, Weight: {personHandler.GetWeight(personCreated1)} kgs"); //Confirming person object attributes 
